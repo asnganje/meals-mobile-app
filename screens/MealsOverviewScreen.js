@@ -16,6 +16,7 @@ const MealsOverviewScreen = ({route, navigation}) => {
   const displayedMeals = MEALS.filter((meal) => meal.categoryIds.includes(catId))
   const mealsDisplay = (itemData) => {
     const mealItemProps = {
+      id:itemData.item.id,
       title:itemData.item.title,
       imagUri:itemData.item.imageUrl,
       duration: itemData.item.duration,
